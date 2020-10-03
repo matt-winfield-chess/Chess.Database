@@ -1,0 +1,5 @@
+# Flyway
+!flyway-7.0.0/
+
+**/flyway-7.0.0/*
+!**/flyway-7.0.0/sql
