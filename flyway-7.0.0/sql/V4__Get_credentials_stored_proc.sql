@@ -15,7 +15,7 @@ BEGIN
 	FROM
 		Users
 	WHERE
-		Username = usernameInput;
+		Users.Username = usernameInput;
 
 END$$
 
