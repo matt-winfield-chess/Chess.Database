@@ -6,7 +6,7 @@ CREATE PROCEDURE GetChallengesByRecipient(
 BEGIN
 
 	SELECT
-		ChallangerId, RecipientId, WhitePlayer
+		ChallengerId, RecipientId, WhitePlayer
 	FROM
 		Challenges
 	WHERE
@@ -21,7 +21,7 @@ CREATE PROCEDURE GetChallengesByChallenger(
 BEGIN
 
 	SELECT
-		ChallangerId, RecipientId, WhitePlayer
+		ChallengerId, RecipientId, WhitePlayer
 	FROM
 		Challenges
 	WHERE
