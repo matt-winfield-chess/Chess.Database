@@ -2,7 +2,7 @@ CREATE TABLE Challenges
 (
 	ChallengerId INT NOT NULL,
 	RecipientId INT NOT NULL,
-	WhitePlayer INT,
+	ChallengerColor INT,
 	FOREIGN KEY (ChallengerId)
 		REFERENCES Users(Id)
 		ON DELETE CASCADE,

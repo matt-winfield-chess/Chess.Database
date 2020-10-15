@@ -6,7 +6,7 @@ CREATE PROCEDURE GetChallengesByRecipient(
 BEGIN
 
 	SELECT
-		ChallengerId, RecipientId, WhitePlayer
+		ChallengerId, RecipientId, ChallengerColor
 	FROM
 		Challenges
 	WHERE
@@ -21,7 +21,7 @@ CREATE PROCEDURE GetChallengesByChallenger(
 BEGIN
 
 	SELECT
-		ChallengerId, RecipientId, WhitePlayer
+		ChallengerId, RecipientId, ChallengerColor
 	FROM
 		Challenges
 	WHERE
@@ -32,14 +32,14 @@ END$$
 CREATE PROCEDURE CreateChallenge(
 	IN challengerIdInput INT,
 	IN recipientIdInput INT,
-	IN whitePlayerInput INT
+	IN challengerColorInput INT
 )
 BEGIN
 
 	INSERT INTO
-		Challenges (ChallengerId, RecipientId, WhitePlayer)
+		Challenges (ChallengerId, RecipientId, ChallengerColor)
 	VALUES
-		(challengerIdInput, recipientIdInput, whitePlayerInput);
+		(challengerIdInput, recipientIdInput, ChallengerColor);
 
 END$$
 
