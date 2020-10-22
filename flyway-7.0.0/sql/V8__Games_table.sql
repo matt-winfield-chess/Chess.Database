@@ -79,9 +79,9 @@ BEGIN
 	FROM
 		Moves
 	WHERE
-		Moves.GameId = gameIdInput;
+		Moves.GameId = gameIdInput
 	ORDER BY
-		Moves.MoveNumber ASC
+		Moves.MoveNumber ASC;
 
 END$$
 
