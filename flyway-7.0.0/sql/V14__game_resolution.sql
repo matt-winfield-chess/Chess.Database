@@ -22,7 +22,7 @@ BEGIN
 
 END$$
 
-CREATE PROCEDURE SetGameWinner(
+CREATE PROCEDURE SetGameResult(
 	IN gameIdInput VARCHAR(255),
 	IN winnerColorInput VARCHAR(255),
 	IN winnerIdInput INT,
