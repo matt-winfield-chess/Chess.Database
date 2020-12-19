@@ -1,0 +1,19 @@
+DROP PROCEDURE GetGameById;
+
+DELIMITER $$
+
+CREATE PROCEDURE GetGameById(
+	IN idInput VARCHAR(255)
+)
+BEGIN
+
+	SELECT
+		*
+	FROM
+		Games
+	WHERE
+		Games.Id = idInput;
+
+END$$
+
+DELIMITER ;
